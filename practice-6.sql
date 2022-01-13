@@ -15,4 +15,9 @@
 -- | Brighton Park          | 678      |
 -- | Burnside               | 10       |
 
+select comments
+from listings left join reviews on listings.id = reviews.id
+limit 10;
+--group by neighborhood
+--limit 10;
 
